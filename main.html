@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justin Cheasty Automated Texting Opt-In</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        label, input {
+            margin-bottom: 10px;
+        }
+        input[type="text"], input[type="tel"] {
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Justin Cheasty</h1>
+    <h1>Opt in to Receive Text Messages</h1>
+    <form id="optInForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="number">Number:</label>
+        <input type="tel" id="number" name="number" required>
+        
+        <label>
+            <input type="checkbox" id="consent" name="consent" required>
+            I consent to receive messages at this number
+        </label>
+        
+        <input type="submit" value="Submit">
+      </form>
+      <h3> © Justin Cheasty 2024 </h3>
+
+    <script>
+        document.getElementById('optInForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert("Number submitted. You won't actually receive any texts since we won't be texting anyone but myself for demo reasons.");
+        });
+    </script>
+</body>
+</html>
