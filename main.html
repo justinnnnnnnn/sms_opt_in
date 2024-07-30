@@ -41,7 +41,7 @@
     </style>
 </head>
 <body>
-    <h1>Justin Cheasty</h1>
+    <h1>Justin Cheasty's SMS opt in landing Page</h1>
     <h1>Opt in to Receive Text Messages</h1>
     <form id="optInForm">
         <label for="name">Name:</label>
@@ -52,7 +52,7 @@
         
         <label>
             <input type="checkbox" id="consent" name="consent" required>
-            I consent to receive messages at this number
+            I verify that I am the owner of the above number and consent to receive messages at this number
         </label>
         
         <input type="submit" value="Submit">
@@ -62,7 +62,7 @@
     <script>
         document.getElementById('optInForm').addEventListener('submit', function(event) {
             event.preventDefault();
-            alert("Number submitted. You won't actually receive any texts since we won't be texting anyone but myself for demo reasons.");
+            alert("Number submitted. You won't actually receive any texts since we won't be texting anyone but myself for demo reasons. If this changes, you will receive a confirmation text with the ability to reply "STOP" to opt out.");
         });
     </script>
 </body>
